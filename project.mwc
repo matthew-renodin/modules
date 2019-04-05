@@ -1,0 +1,7 @@
+// -*- MPC -*-
+workspace {
+  cmdline += -include common
+  exclude {
+   // todo : get the mfc projects working correctly.
+  }
+}

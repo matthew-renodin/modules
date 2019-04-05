@@ -1,0 +1,16 @@
+// -*- MPC -*-
+project(*IDL): taoidldefaults {
+  IDL_Files {
+  }
+  custom_only = 1
+}
+
+project(*client): namingexe, iortable, utils {
+  exename = client
+  after += *IDL
+  Source_Files {
+    main.cpp
+  }
+  IDL_Files {
+  }
+}
